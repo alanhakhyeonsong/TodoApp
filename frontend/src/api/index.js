@@ -6,13 +6,7 @@ const config = {
 
 // 전체 조회
 function getTodos() {
-    return axios.get(`${config.baseUrl}/todo`)
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => {
-            console.log(error);
-        });
+    return axios.get(`${config.baseUrl}/todo`);
 }
 
 /**function postTodo() {
